@@ -16,3 +16,24 @@ the price to the list. Otherwise it will create new entry in your dictionary.
 For example entering 'tata' and 560 will add tata ==> [560] to the dictionary of stocks.
 """
 
+stock = {
+    "info": [600, 630, 620],
+    "ril": [1430, 1490, 1567],
+    "mtl": [234, 180, 160]
+}
+
+option = int(input("1.Print\n2.Add\nChoose any one:"))
+if option == 1:
+    for s in stock:
+        print(f"{s} ==> {stock.get(s)}")
+elif option == 2:
+    st = input("Enter stock ticker: ")
+    price = int(input("Enter price: "))
+    if st in stock:
+        stock[st].append(price)
+    else:
+        stock[st] = [price]
+    for s in stock:
+        print(f"{s} ==> {stock.get(s)}")
+
+# print(dir(list))
