@@ -3,7 +3,28 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="\Pandas\Group By Function\weather_by_cities.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Pandas\Reading and Writing Files\cricket.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Pandas\Reading and Writing Files\food_db.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Pandas\Reading and Writing Files\fruits_data.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -17,14 +38,14 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\Pandas\movies.csv">
+        <entry key="\Pandas\Reading and Writing Files\weather_data.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Pandas\sample.csv">
+        <entry key="\Pandas\movies.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
