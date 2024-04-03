@@ -73,6 +73,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Statistics\movie_revenues.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\long programs\cricket.csv">
           <value>
             <Attribute>
