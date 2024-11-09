@@ -1,0 +1,11 @@
+food_id,name,discount,price,rating
+1,Burger,10%,$12.99 ,Goot
+2,Chola,5%,$7.50 ,Average
+3,Karhai,15%,$15.99 ,Excellent
+4,Aalo,20%,$3.99 ,Very Good
+5,Roll,10%,$2.50 ,Good
+6,Chapati,5%,$8.99 ,Very Good
+7,Naan,10%,$10.99 ,Excellent
+8,Dahi,15%,$6.99 ,Very Good
+9,Salad,10%,$16.99 ,Excellent
+10,Meat,5%,$3.50 ,Excellent

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Flight Price Prediction</h1>
+        <form id="predictionForm" action="/process" method="POST">
+            <label for="airline">Airline:</label>
+            <select id="airline" name="airline">
+                <option value="airline_SpiceJet">SpiceJet</option>
+                <option value="airline_AirAsia">AirAsia</option>
+                <option value="airline_Vistara">Vistara</option>
+                <option value="airline_GO_FIRST">GO_FIRST</option>
+                <option value="airline_Indigo">Indigo</option>
+                <option value="airline_Air_India">Air_India</option>
+            </select>
+
+            <label for="source_city">Source City:</label>
+            <select id="source_city" name="source_city">
+                <option value="sourceCity_Delhi">Delhi</option>
+                <option value="sourceCity_Mumbai">Mumbai</option>
+                <option value="sourceCity_Bangalore">Bangalore</option>
+                <option value="sourceCity_Kolkata">Kolkata</option>
+                <option value="sourceCity_Hyderabad">Hyderabad</option>
+                <option value="sourceCity_Chennai">Chennai</option>
+            </select>
+
+            <label for="departure_time">Departure Time:</label>
+            <select id="departure_time" name="departure_time">
+                <option value="dept_time_Morning">Morning</option>
+                <option value="dept_time_Early_Morning">Early Morning</option>
+                <option value="dept_time_Evening">Evening</option>
+                <option value="dept_time_Night">Night</option>
+                <option value="dept_time_Afternoon">Afternoon</option>
+                <option value="dept_time_Late Night">Late Night</option>
+            </select>
+
+            <label for="stops">Stops:</label>
+            <select id="stops" name="stops">
+                <option value="stop_zero">Zero</option>
+                <option value="stop_one">One</option>
+                <option value="stop_two_or_more">Two or More</option>
+            </select>
+
+            <label for="arrival_time">Arrival Time:</label>
+            <select id="arrival_time" name="arrival_time">
+                <option value="arr_time_Morning">Morning</option>
+                <option value="arr_time_Early_Morning">Early Morning</option>
+                <option value="arr_time_Evening">Evening</option>
+                <option value="arr_time_Night">Night</option>
+                <option value="arr_time_Afternoon">Afternoon</option>
+                <option value="arr_time_Late_Night">Late Night</option>
+            </select>
+
+            <label for="destination_city">Destination City:</label>
+            <select id="destination_city" name="destination_city">
+                <option value="dest_city_Delhi">Delhi</option>
+                <option value="dest_city_Mumbai">Mumbai</option>
+                <option value="dest_city_Bangalore">Bangalore</option>
+                <option value="dest_city_Kolkata">Kolkata</option>
+                <option value="dest_city_Hyderabad">Hyderabad</option>
+                <option value="dest_city_Chennai">Chennai</option>
+            </select>
+
+            <label for="class">Class:</label>
+            <select id="class" name="class">
+                <option value="Economy">Economy</option>
+                <option value="Business">Business</option>
+            </select>
+
+            <label for="duration">Duration (hrs):</label>
+            <input type="number" id="duration" name="duration" min="1" max="50" required>
+
+            <label for="days_left">Days Left to Departure:</label>
+            <input type="number" id="days_left" name="days_left" min="1" max="50" required>
+
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
