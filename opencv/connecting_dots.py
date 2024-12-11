@@ -11,7 +11,7 @@ def mouse_event(event,x,y,flags,param):
            cv.imshow('Image',img) 
     
 
-img = np.ones((420,420,3),np.uint8)*255
+img = np.ones((400,400,3),np.uint8)*255
 points = []
 cv.imshow('Image',img)
 cv.setMouseCallback('Image',mouse_event)
